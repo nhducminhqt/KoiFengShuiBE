@@ -4,13 +4,13 @@ package org.example.kfs.configuaration;
 public class EndPoint {
 
     public static final String[] ADMIN_GET_ENDPOINTS = {
+            "api/bills","/users/new-users-today", "/users/new-users-this-week", "/users/new-users-this-month",
+            "/api/consultation-requests/completed-count",  "/posts/count", "/consultation-results/completed-count",
+            "/api/bills/total-income-this-month",
             "/animals", "/animals/animal-search", "/shelters", "/shelters/search-name", "/shelters/{search}",
             "/colors", "shapes", "/animal-images", "/shelter-images", "colors/getAll-Colors",
             "shapes/getAll-Shapes", "shapes/shape-search", "/users", "/users/search-name", "/roles",
-            "colors/search-colors", "api/bills"
-            ,"/users/new-users-today", "/users/new-users-this-week", "/users/new-users-this-month",
-            "/api/consultation-requests/completed-count",  "/posts/count", "/consultation-results/completed-count",
-            "/api/bills/total-income-this-month"
+            "colors/search-colors"
     };
 
     public static final String[] ADMIN_POST_ENDPOINTS = {
