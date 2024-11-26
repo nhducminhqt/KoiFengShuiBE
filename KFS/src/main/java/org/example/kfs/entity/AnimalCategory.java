@@ -25,13 +25,15 @@ public class AnimalCategory {
     @Column(name = "animal_category_name", nullable = false)
     private String animalCategoryName;
 
-    @Size(max = 1000)
-    @Column(name = "description", length = 1000)
-    private String description;
 
     @Size(max = 255)
     @Column(name = "origin")
     private String origin;
+
+    @Size(max = 1000)
+    @Column(name = "description", length = 1000)
+    private String description;
+
 
     @NotNull
     @Column(name = "status")
