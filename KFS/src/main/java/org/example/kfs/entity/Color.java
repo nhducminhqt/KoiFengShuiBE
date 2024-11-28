@@ -41,14 +41,15 @@ public class Color {
     @Nationalized
     @Column(name = "created_by", length = 50)
     private String createdBy;
-
-    @Column(name = "updated_date")
-    private Instant updatedDate = Instant.now();
-
     @Size(max = 50)
     @Nationalized
     @Column(name = "updated_by", length = 50)
     private String updatedBy;
+
+    @Column(name = "updated_date")
+    private Instant updatedDate = Instant.now();
+
+
 
     @ManyToMany(mappedBy = "colors", cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
     private Set<AnimalCategory> animalCategories = new LinkedHashSet<>();
