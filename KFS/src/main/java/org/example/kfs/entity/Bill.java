@@ -67,14 +67,14 @@ public class Bill {
     @Nationalized
     @Column(name = "updated_by")
     private String updatedBy;
-
-    @ManyToMany(mappedBy = "bills", cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
-    private Set<Package> packageFields = new LinkedHashSet<>();
-
     @ManyToOne (cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
     @JoinColumn(name = "consultation_request_id", nullable = false)
     @JsonBackReference
     private ConsultationRequest consultationRequest;
+    @ManyToMany(mappedBy = "bills", cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.DETACH})
+    private Set<Package> packageFields = new LinkedHashSet<>();
+
+
 
     @PrePersist
     protected void onCreate() {
