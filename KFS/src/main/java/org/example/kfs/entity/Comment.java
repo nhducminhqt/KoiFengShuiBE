@@ -37,15 +37,15 @@ public class Comment {
     @NotNull
     @Column(name = "created_date", nullable = false)
     private Instant createdDate = Instant.now();
-
+    @Column(name = "updated_date")
+    private Instant updatedDate = Instant.now();
     @Size(max = 255)
     @NotNull
     @Nationalized
     @Column(name = "created_by", nullable = false)
     private String createdBy;
 
-    @Column(name = "updated_date")
-    private Instant updatedDate = Instant.now();
+
 
     @Size(max = 255)
     @Nationalized
