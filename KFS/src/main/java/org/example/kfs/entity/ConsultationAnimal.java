@@ -58,13 +58,14 @@ public class ConsultationAnimal {
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private Request status = Request.CANCELLED;
+    @Size(max = 300)
+    @Column(name = "created_by", length = 300)
+    private String createdBy;
 
     @Column(name = "created_date")
     private Instant createdDate;
 
-    @Size(max = 300)
-    @Column(name = "created_by", length = 300)
-    private String createdBy;
+
 
     @Column(name = "updated_date")
     private Instant updatedDate;
