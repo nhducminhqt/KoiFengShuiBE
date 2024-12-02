@@ -1,8 +1,6 @@
 package org.example.kfs.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fengshuisystem.demo.entity.enums.BillStatus;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -19,7 +17,7 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+@Destiny
 public class Bill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,6 +1,5 @@
 package org.example.kfs.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fengshuisystem.demo.entity.enums.Status;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -13,7 +12,7 @@ import java.time.Instant;
 
 @Getter
 @Setter
-@Entity
+@Destiny
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

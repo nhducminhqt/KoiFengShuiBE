@@ -17,7 +17,7 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+@Destiny
 public class ConsultationRequestDetail {
 
     @Id

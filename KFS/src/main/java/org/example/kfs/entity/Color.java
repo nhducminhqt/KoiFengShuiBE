@@ -13,7 +13,7 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+@Destiny
 public class Color {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

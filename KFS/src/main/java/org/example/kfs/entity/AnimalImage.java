@@ -2,18 +2,14 @@ package org.example.kfs.entity;
 
 import com.fengshuisystem.demo.entity.enums.Status;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.*;
-
-import java.time.Instant;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity
+@Destiny
 public class AnimalImage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

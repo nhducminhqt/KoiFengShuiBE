@@ -20,7 +20,7 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+@Destiny
 @Table(name = "consultation_result")
 public class ConsultationResult {
     @Id

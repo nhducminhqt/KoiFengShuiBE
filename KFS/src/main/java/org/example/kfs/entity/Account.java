@@ -1,15 +1,12 @@
 package org.example.kfs.entity;
 
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fengshuisystem.demo.entity.enums.Gender;
 import com.fengshuisystem.demo.entity.enums.Status;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.annotations.Nationalized;
-import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -21,7 +18,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity
+@Destiny
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

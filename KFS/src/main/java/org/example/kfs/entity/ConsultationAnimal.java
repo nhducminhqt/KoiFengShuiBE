@@ -14,7 +14,7 @@ import java.util.Set;
 
 @Getter
 @Setter
-@Entity
+@Destiny
 @Table(name = "consultation_animal")
 public class ConsultationAnimal {
     @Id
