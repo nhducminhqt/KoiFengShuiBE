@@ -1,4 +1,4 @@
-package com.fengshuisystem.demo.configuration;
+package org.example.kfs.configuration;
 
 public class EndPoint {
 
