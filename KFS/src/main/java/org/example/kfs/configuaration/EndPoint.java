@@ -1,16 +1,15 @@
-package org.example.kfs.configuaration;
-
+package com.fengshuisystem.demo.configuration;
 
 public class EndPoint {
 
     public static final String[] ADMIN_GET_ENDPOINTS = {
-            "api/bills","/users/new-users-today", "/users/new-users-this-week", "/users/new-users-this-month",
-            "/api/consultation-requests/completed-count",  "/posts/count", "/consultation-results/completed-count",
-            "/api/bills/total-income-this-month",
             "/animals", "/animals/animal-search", "/shelters", "/shelters/search-name", "/shelters/{search}",
             "/colors", "shapes", "/animal-images", "/shelter-images", "colors/getAll-Colors",
-            "shapes/getAll-Shapes", "shapes/shape-search", "/users", "/users/search-name", "/roles",
-            "colors/search-colors"
+            "shapes/shape-search", "/users", "/users/search-name", "/roles",
+            "colors/search-colors", "api/bills"
+            ,"/users/new-users-today", "/users/new-users-this-week", "/users/new-users-this-month",
+            "/api/consultation-requests/completed-count",  "/posts/count", "/consultation-results/completed-count",
+            "/api/bills/total-income-this-month", "/api/bills/total-income-between-dates"
     };
 
     public static final String[] ADMIN_POST_ENDPOINTS = {
@@ -42,14 +41,15 @@ public class EndPoint {
     public static final String[] PUBLIC_GET_ENDPOINTS = {
             "users/existByUserName", "users/existByEmail", "users/activate",
             "/destinys/destiny/{yearOfBirth}", "/destinys/autoConsultation/{yearOfBirth}",
-            "api/vn_pay/create_vn_pay", "shapes/getAll-Shapes", "/api/number",
-            "animals/animalCategory", "colors/getAll-Colors", "/shelters/shelterCategory","api/direction","/api/bills/search"
+            "api/vn_pay/create_vn_pay", "/api/number"
+            , "colors/getAll-Colors","api/direction",
+            "shapes/getAll-Shapes"
     };
 
     public static final String[] USER_GET_ENDPOINTS = {
             "/posts", "/posts/search-posts", "/post/comments", "/post/images",
             "api/bills/{billId}", "/vn_pay/create_vn_pay","/search-posts/title","/search-posts/email",
-            "/animals/animal-destiny" , "/posts/search-posts/year", "/shelters/shelter-search", "/animals/animal-destiny-name", "/shelters/shelter-search-name"
+            "/animals/animal-destiny" , "/posts/search-posts/year", "/animals/animal-destiny-name"
     };
 
     public static final String[] USER_POST_ENDPOINTS = {
@@ -70,13 +70,11 @@ public class EndPoint {
 
     public static final String[] BOTH_GET_ENDPOINTS = {
             "api/bills/{id}/status",
-            "api/bills/{billId}",
-            "/destinys"
-
+            "/api/bills/{billId}",
+            "/destinys", "/api/bills/search", "/shelters/shelter-search",  "/shelters/shelter-search-name", "/packages/{id}", "/shelters/shelterCategory", "animals/animalCategory"
     };
 
     public static final String[] BOTH_DELETE_ENDPOINTS = {
             "/posts/{id}",
     };
 }
-
